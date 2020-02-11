@@ -13,6 +13,7 @@ Will be value for a field added in version 2 moved/synced on a device which has 
 [code sample](https://github.com/BLCKBIRDS/Core-Data-in-SwiftUI---Pizza-Restaurant-App)
 
 Swift Coredata Cheatsheets:
+
 https://learn.co/lessons/swift-coredata-cheatsheet
 https://www.andrewcbancroft.com/2015/02/18/core-data-cheat-sheet-for-swift-ios-developers/
 
@@ -31,14 +32,16 @@ source: https://github.com/bartjacobs/ObservingManagedObjectContext
 
 [Group by, Count and Sum in CoreData](https://www.cocoanetics.com/2017/04/group-by-count-and-sum-in-coredata/)
 
-[Book]("Core data in swift" by Marcus Zarra pdf)
+Book: "Core data in swift" by Marcus Zarra pdf
 
 [Syncing a Core Data Store with CloudKit](https://developer.apple.com/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit)
 
 [Consuming Relevant Store Changes](https://developer.apple.com/documentation/coredata/consuming_relevant_store_changes)
+
 (also NSManagedObjectContextDidSaveNotification vs NSPersistentStoreRemoteChangeNotification)
 
 Toggle sync with NSPersistentCloudKitContainer (see post Nov 3, 2019 1:34 PM):
+
 https://forums.developer.apple.com/thread/118924
 https://stackoverflow.com/questions/58179862/cloudkit-sync-using-nspersistentcloudkitcontainer-in-ios13
 
@@ -103,7 +106,7 @@ Code Sample (How to translate this SQL Query into a NSFetchRequest):
 source: https://stackoverflow.com/questions/26809587/how-to-translate-this-sql-query-into-a-nsfetchrequest
 select max(ZSENTAT), * from ZMESSAGE where ZISINCOMING == 1 group by ZROOTMESSAGEID;
 
-```
+```objective-c
 NSExpression *maxExpression = [NSExpression expressionWithFormat:@"max:(sentAt)"];
 NSExpressionDescription *maxDesc = [[NSExpressionDescription alloc] init];
 maxDesc.name = @"maxSentAt";
