@@ -162,6 +162,9 @@ List(items, id: \.self) {
 .id(UUID())
 ```
 
+
+[Environment Values](https://developer.apple.com/documentation/swiftui/environmentvalues)
+
 TODO: Display all environment values:
 struct ShowLineLimit: View {
   
@@ -173,5 +176,4 @@ struct ShowLineLimit: View {
 }
 
 
-[Environment Values](https://developer.apple.com/documentation/swiftui/environmentvalues)
 
