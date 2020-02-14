@@ -150,3 +150,28 @@ playsSubscription = playsPublisher.zip(replayVideoPublisher).map {
 }.receive(on: RunLoop.main).assign(to: \.text, on: self.playsLabel)
 ```
 
+
+[Observing Core Data Changes with a Custom Combine Publisher](https://www.mattmoriarity.com/observing-core-data-changes-with-combine/custom-publisher/)
+
+code sample [How to fix slow List updates in SwiftUI"](https://www.hackingwithswift.com/articles/210/how-to-fix-slow-list-updates-in-swiftui)
+
+```swift
+List(items, id: \.self) {
+    Text("Item \($0)")
+}
+.id(UUID())
+```
+
+TODO: Display all environment values:
+struct ShowLineLimit: View {
+  
+  @Environment(\.lineLimit) var limit
+  
+  var body: some View {
+    Text(verbatim: "The line limit is: \(limit)")
+  }
+}
+
+
+[Environment Values](https://developer.apple.com/documentation/swiftui/environmentvalues)
+
