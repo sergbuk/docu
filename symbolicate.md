@@ -1,6 +1,6 @@
 # HowTo: Symbolicating iOS Crashlog (VS + Xamarin)
 
-1. Enable the "Build..IPA" option for iOS project and rebuild it.
+1. Enable the "Build..IPA" option for iOS project and rebuild it (Not sure whether this steps is required).
 
 ![iOS IPA Options](https://raw.githubusercontent.com/sergbuk/docu/master/iOS%20IPA%20Options.png)
 
@@ -21,3 +21,6 @@ When you build your iOS project, you should have the .app file in the buil direc
 5. **Symbolicate**. Open Terminal again and cd to the directory where you placed your files in the step above. Run the symbolicate command we aliased before with your .crash and .app files as the parameters like this:
 >symbolicate -o "symbolicatedCrash.txt" "crashlog_text.crash" "MyAppName.app"
 
+This will symbolicate the crash file and spit out the result in a new file named "symbolicatedCrash.txt". Make sure that correct the file names from my example to match yours.
+
+see also: https://stackoverflow.com/questions/38579117/how-to-symbolicate-crash-error-logs-from-a-xamarin-forms-ios-project
