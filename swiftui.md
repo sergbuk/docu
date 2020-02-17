@@ -175,5 +175,7 @@ struct ShowLineLimit: View {
   }
 }
 
+![Core Data](https://raw.githubusercontent.com/sergbuk/docu/master/coredata_classes.gif)
+
 
 
