@@ -18,7 +18,7 @@ When you build your iOS project, you should have the .app file in the buil direc
 4. **Update the Developer Directory**. Run this command:
 >export DEVELOPER_DIR="/Applications/Xcode.app/Contents/Developer"
 
-5. **Symbolicate**. Open Terminal again and cd to the directory where you placed your files in the step above. Run the symbolicate command we aliased before with your .crash and .app files as the parameters like this:
+5. **Symbolicate**. Open Terminal again and cd to the directory where you placed your files in the steps above. Run the symbolicate command we aliased before with your .crash and .app files as the parameters like this:
 >symbolicate -o "symbolicatedCrash.txt" "crashlog_text.crash" "MyAppName.app"
 
 This will symbolicate the crash file and spit out the result in a new file named "symbolicatedCrash.txt". Make sure that correct the file names from my example to match yours.
